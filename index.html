@@ -1,52 +1,59 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact form</title>
+  </head>
+  <body>
+    <main class="container">
+      <h1>Contact Us</h1>
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Contact form</title>
+      <form>
+        <div class="field-row">
+          <label class="field">
+            <span>First Name <span class="required">*</span></span>
+            <input type="text" name="first-name" placeholder="Enter your first name" required />
+          </label>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 0.6875rem; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+          <label class="field">
+            <span>Last Name <span class="required">*</span></span>
+            <input type="text" name="last-name" placeholder="Enter your last name" required />
+          </label>
+        </div>
 
-  Contact Us
+        <label class="field">
+          <span>Email Address <span class="required">*</span></span>
+          <input type="email" name="email" placeholder="Enter your email address" required />
+        </label>
 
-  First Name
-  This field is required
+        <div class="field">
+          <span>Query Type <span class="required">*</span></span>
+          <div class="radio-grid">
+            <label class="radio-button">
+              <input type="radio" name="query-type" value="general" required />
+              <span>General Enquiry</span>
+            </label>
+            <label class="radio-button">
+              <input type="radio" name="query-type" value="support" />
+              <span>Support Request</span>
+            </label>
+          </div>
+        </div>
 
-  Last Name
-  This field is required
+        <label class="field">
+          <span>Message <span class="required">*</span></span>
+          <textarea name="message" placeholder="Enter your message" required
+          ></textarea>
+        </label>
 
-  Email Address
-  Please enter a valid email address
-  This field is required
+        <label class="checkbox-row">
+          <input type="checkbox" name="consent" required />
+          <span>I consent to being contacted by the team <span class="required">*</span></span>
+        </label>
 
-  Query Type
-  General Enquiry
-  Support Request
-  Please select a query type
-
-  Message
-  This field is required
-
-  I consent to being contacted by the team
-  To submit this form, please consent to being contacted
-
-  Submit
-
-  Message Sent!
-  Thanks for completing the form. We'll be in touch soon!
-  
-  <footer class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </footer>
-</body>
+        <button type="submit">Submit</button>
+      </form>
+    </main>
+  </body>
 </html>
