@@ -3,52 +3,55 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Contact us form for general enquiries and support requests." />
+    <link rel="icon" href="./assets/images/favicon-32x32.png" sizes="32x32" />
+    <link rel="stylesheet" href="./styles.css" />
     <title>Contact form</title>
   </head>
+
   <body>
     <main class="container">
       <h1>Contact Us</h1>
 
-      <form>
+      <form action="#" method="post" aria-label="Contact form">
         <div class="field-row">
-          <label class="field">
+          <label class="field" for="first-name">
             <span>First Name <span class="required">*</span></span>
-            <input type="text" name="first-name" placeholder="Enter your first name" required />
           </label>
+          <input id="first-name" name="first-name" type="text" autocomplete="given-name" placeholder="Enter your first name" required />
 
-          <label class="field">
+          <label class="field" for="last-name">
             <span>Last Name <span class="required">*</span></span>
-            <input type="text" name="last-name" placeholder="Enter your last name" required />
           </label>
+          <input id="last-name" name="last-name" type="text" autocomplete="family-name" placeholder="Enter your last name" required />
         </div>
 
-        <label class="field">
+        <label class="field" for="email">
           <span>Email Address <span class="required">*</span></span>
-          <input type="email" name="email" placeholder="Enter your email address" required />
         </label>
+        <input id="email" name="email" type="email" autocomplete="email" placeholder="Enter your email address" required />
 
-        <div class="field">
-          <span>Query Type <span class="required">*</span></span>
-          <div class="radio-grid">
-            <label class="radio-button">
-              <input type="radio" name="query-type" value="general" required />
+        <fieldset class="field">
+          <legend>Query Type <span class="required">*</span></legend>
+          <div class="radio-grid" role="radiogroup" aria-labelledby="query-type-legend">
+            <label class="radio-button" for="query-general">
+              <input id="query-general" type="radio" name="query-type" value="general" required />
               <span>General Enquiry</span>
             </label>
-            <label class="radio-button">
-              <input type="radio" name="query-type" value="support" />
+            <label class="radio-button" for="query-support">
+              <input id="query-support" type="radio" name="query-type" value="support" />
               <span>Support Request</span>
             </label>
           </div>
-        </div>
+        </fieldset>
 
-        <label class="field">
+        <label class="field" for="message">
           <span>Message <span class="required">*</span></span>
-          <textarea name="message" placeholder="Enter your message" required
-          ></textarea>
         </label>
+        <textarea id="message" name="message" placeholder="Enter your message" required></textarea>
 
-        <label class="checkbox-row">
-          <input type="checkbox" name="consent" required />
+        <label class="checkbox-row" for="consent">
+          <input id="consent" name="consent" type="checkbox" required />
           <span>I consent to being contacted by the team <span class="required">*</span></span>
         </label>
 
