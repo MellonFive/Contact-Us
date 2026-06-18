@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Contact us form for general enquiries and support requests." />
     <link rel="icon" href="./assets/images/favicon-32x32.png" sizes="32x32" />
-    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="assets/css/reset.css" />
     <title>Contact form</title>
   </head>
 
@@ -13,28 +13,39 @@
     <main class="container">
       <h1>Contact Us</h1>
 
+      <!-- Formulário de contato: envia dados via POST (a action="#" é placeholder) -->
       <form action="#" method="post" aria-label="Contact form">
+        <!-- Linha com dois campos de texto (nome e sobrenome) -->
         <div class="field-row">
+          <!-- Rótulo para o primeiro nome; o for associa ao input com id correspondente -->
           <label class="field" for="first-name">
             <span>First Name <span class="required">*</span></span>
           </label>
+          <!-- Campo de texto para o primeiro nome; autocomplete ajuda o navegador -->
           <input id="first-name" name="first-name" type="text" autocomplete="given-name" placeholder="Enter your first name" required />
 
+          <!-- Rótulo para o sobrenome -->
           <label class="field" for="last-name">
             <span>Last Name <span class="required">*</span></span>
           </label>
+          <!-- Campo de texto para o sobrenome -->
           <input id="last-name" name="last-name" type="text" autocomplete="family-name" placeholder="Enter your last name" required />
         </div>
 
+        <!-- Rótulo e campo para e-mail (tipo email valida o formato no navegador) -->
         <label class="field" for="email">
           <span>Email Address <span class="required">*</span></span>
         </label>
         <input id="email" name="email" type="email" autocomplete="email" placeholder="Enter your email address" required />
 
+        <!-- Conjunto de opções (radio) para tipo de consulta -->
         <fieldset class="field">
-          <legend>Query Type <span class="required">*</span></legend>
+          <!-- Legend descreve o conjunto; importante para acessibilidade -->
+          <legend id="query-type-legend">Query Type <span class="required">*</span></legend>
+          <!-- role="radiogroup" e aria-labelledby ligam o grupo ao legend para leitores de tela -->
           <div class="radio-grid" role="radiogroup" aria-labelledby="query-type-legend">
             <label class="radio-button" for="query-general">
+              <!-- Radio: mesmo name agrupa as opções; value é o valor enviado -->
               <input id="query-general" type="radio" name="query-type" value="general" required />
               <span>General Enquiry</span>
             </label>
@@ -45,16 +56,19 @@
           </div>
         </fieldset>
 
+        <!-- Mensagem do usuário: textarea para texto multilinha -->
         <label class="field" for="message">
           <span>Message <span class="required">*</span></span>
         </label>
         <textarea id="message" name="message" placeholder="Enter your message" required></textarea>
 
+        <!-- Consentimento: checkbox obrigatório para contato futuro -->
         <label class="checkbox-row" for="consent">
           <input id="consent" name="consent" type="checkbox" required />
           <span>I consent to being contacted by the team <span class="required">*</span></span>
         </label>
 
+        <!-- Botão que submete o formulário -->
         <button type="submit">Submit</button>
       </form>
     </main>
