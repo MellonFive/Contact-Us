@@ -5,3 +5,8 @@ main {
   justify-content: center;
   height: 100vh;
 }
+
+
+main > h1 {
+  text-align: left;
+}
