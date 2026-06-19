@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'Karla normal';
+    src: url(../fonts/Karla-VariableFont_wght.ttf);
+}
+
 body > * {
-    /* COLOCAR font-family: ; */
+    font-family: 'Karla normal' sans-serif;
 }
