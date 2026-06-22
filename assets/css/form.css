@@ -1,0 +1,13 @@
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+form > .field-row {
+  width: 100%;
+}
+
+form .field-name {
+  background-color: blueviolet;
+}
