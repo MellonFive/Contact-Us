@@ -6,11 +6,11 @@ form {
   background-color: var(--Green-600-medium);
 }
 
-form > .container {
+form  {
   width: 100%;
 }
 
-form .container .field-row {
+form .field-row {
   width: 100%;
   
   display: flex;
@@ -19,7 +19,7 @@ form .container .field-row {
   background-color: red;
 }
 
-form .container .field-name {
+form .field-name {
   width: 100%;
 
   display: flex;
