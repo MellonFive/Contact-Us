@@ -2,10 +2,12 @@ main {
   background-color: var(--White);
   
   padding: 2rem;
+
+  border-radius: 1rem;
 }
 
 main > h1 {
   width: 100%;
 
-  font-size: 3rem;
+  font-size: 2.8rem;
 }
