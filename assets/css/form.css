@@ -25,9 +25,9 @@ form .field-last_name {
   font-size: 1.5rem;
 }
 
-form .field-name [placeholder="Enter your first name"],
-form .field-last_name [placeholder="Enter your last name"]{
-  margin-top: 1.5rem;
+form .field-name > input,
+form .field-last_name > input {
+  margin-top: 1rem;
 
   padding: 1rem 1.5rem;
 
