@@ -22,7 +22,7 @@ form .field-last_name {
   display: flex;
   flex-direction: column;
 
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 form .field-name [placeholder="Enter your first name"],
