@@ -35,3 +35,7 @@ form .field-last_name > input {
 
   border: 1px solid #000;
 }
+
+form > .field-email {
+  background-color: red;
+}
