@@ -22,16 +22,16 @@ form .field-last_name {
   display: flex;
   flex-direction: column;
 
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 }
 
 form .field-name > input,
 form .field-last_name > input {
   margin-top: 1rem;
 
-  padding: 1rem 1.5rem;
+  padding: .5rem 1rem;
 
-  border-radius: 1rem;
+  border-radius: .7rem;
 
   border: 1px solid #000;
 }
