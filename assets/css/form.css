@@ -35,6 +35,10 @@ form .field-last_name > input {
   border: 1px solid #000;
 }
 
+form .field-email {
+  margin-top: 2rem;
+}
+
 form .field-email > span {
   font-size: 1.3rem;
   font-weight: 600;
