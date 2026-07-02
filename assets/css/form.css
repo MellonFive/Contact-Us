@@ -74,3 +74,14 @@ form .field[for="message"] ~ textarea {
   border-radius: .5rem;
   border: 1px solid #000;
 }
+
+form .checkbox-row {
+  display: flex;
+  align-items: center;
+
+  margin: 2rem 0;
+}
+
+form .checkbox-row > input {
+  margin-right: 1rem;
+}
