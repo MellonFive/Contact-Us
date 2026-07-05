@@ -13,17 +13,19 @@ form .field {
 
 form .field-row {
   width: 100%;
-  
+
   display: flex;
-  gap: 2rem;  
+  gap: 2rem;
 
   margin-top: 2rem;
 }
 
-form .field-name, 
+form .field-name,
 form .field-last_name {
   display: flex;
   flex-direction: column;
+
+  width: 50%;
 
   font-size: 1.3rem;
   font-weight: 600;
@@ -65,9 +67,9 @@ form .field > #query-type-legend {
 form .field > .radio-grid {
   display: flex;
   justify-content: space-around;
-  
+
   padding: 1.5rem 1rem;
-  
+
   font-size: 1.5rem;
 }
 
