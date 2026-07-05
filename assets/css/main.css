@@ -1,6 +1,8 @@
 main {
   background-color: var(--White);
-  
+
+  width: 40%;
+
   padding: 2.5rem;
 
   border-radius: 1rem;
