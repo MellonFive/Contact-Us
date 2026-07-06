@@ -74,6 +74,8 @@ form .field > .radio-grid {
 
 form .field[for="message"] > span {
   font-size: 1.3rem;
+
+  color: var(--Grey-500-medium);
 }
 
 form .field[for="message"] ~ textarea {
