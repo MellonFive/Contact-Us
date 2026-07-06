@@ -99,3 +99,9 @@ form .checkbox-row {
 form .checkbox-row > input {
   margin-right: 1rem;
 }
+
+form .checkbox-row > input ~ span {
+  font-size: 1.3rem;
+
+  color: var(--Grey-500-medium);
+}
