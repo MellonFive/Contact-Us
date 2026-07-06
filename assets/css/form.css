@@ -85,6 +85,8 @@ form .field[for="message"] ~ textarea {
 
   border-radius: .5rem;
   border: 1px solid #000;
+
+  height: 10rem;
 }
 
 form .checkbox-row {
