@@ -64,7 +64,7 @@ form .field-email ~ input {
 form .field > #query-type-legend {
   font-size: 1.5rem;
   font-weight: 600;
-  
+
   color: var(--Grey-500-medium);
 }
 
@@ -112,6 +112,8 @@ form .checkbox-row > input ~ span {
   font-size: 1.5rem;
 
   color: var(--Grey-500-medium);
+
+  margin: 1.5rem 0;
 }
 
 form > button {
