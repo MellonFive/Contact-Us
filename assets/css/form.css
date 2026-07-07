@@ -61,6 +61,8 @@ form .field-email ~ input {
 
 form .field > #query-type-legend {
   font-size: 1.3rem;
+
+  color: var(--Grey-500-medium);
 }
 
 form .field > .radio-grid {
