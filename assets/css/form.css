@@ -23,7 +23,8 @@ form .field-last_name {
 
   width: 50%;
 
-  font-size: 1.3rem;
+  font-size: 1.5rem;
+  font-weight: 600;
 
   color: var(--Grey-500-medium)
 }
@@ -37,7 +38,7 @@ form .field-last_name > input {
   border-radius: .5rem;
   border: 1px solid var(--Grey-500-medium);
 
-  color: var(--Grey-500-medium)
+  color: var(--Grey-500-medium);
 }
 
 form .field-email {
@@ -47,7 +48,8 @@ form .field-email {
 }
 
 form .field-email > span {
-  font-size: 1.3rem;
+  font-size: 1.5rem;
+  font-weight: 600;
 }
 
 form .field-email ~ input {
@@ -60,8 +62,9 @@ form .field-email ~ input {
 }
 
 form .field > #query-type-legend {
-  font-size: 1.3rem;
-
+  font-size: 1.5rem;
+  font-weight: 600;
+  
   color: var(--Grey-500-medium);
 }
 
@@ -69,13 +72,16 @@ form .field > .radio-grid {
   display: flex;
   justify-content: space-around;
 
+  color: var(--Grey-500-medium);
+
   padding: 1.5rem 1rem;
 
   font-size: 1.5rem;
 }
 
 form .field[for="message"] > span {
-  font-size: 1.3rem;
+  font-size: 1.5rem;
+  font-weight: 600;
 
   color: var(--Grey-500-medium);
 }
@@ -86,7 +92,7 @@ form .field[for="message"] ~ textarea {
   padding: 1.5rem 1rem;
 
   border-radius: .5rem;
-  border: 1px solid #000;
+  border: 1px solid var(--Grey-500-medium);
 
   height: 10rem;
 }
@@ -103,7 +109,7 @@ form .checkbox-row > input {
 }
 
 form .checkbox-row > input ~ span {
-  font-size: 1.3rem;
+  font-size: 1.5rem;
 
   color: var(--Grey-500-medium);
 }
