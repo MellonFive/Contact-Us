@@ -41,6 +41,15 @@ form .field-last_name > input {
   color: var(--Grey-500-medium);
 }
 
+form .field-name > input:hover,
+form .field-last_name > input:hover {
+  outline: none;
+
+  border: 1px solid var(--Green-600-medium);
+
+  cursor: pointer;
+}
+
 form .field-email {
   margin-top: 2rem;
 
@@ -71,6 +80,8 @@ form .field > #query-type-legend {
 form .field > .radio-grid {
   display: flex;
   justify-content: space-around;
+
+  border-radius: .5rem;
 
   color: var(--Grey-500-medium);
 
