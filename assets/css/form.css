@@ -140,4 +140,10 @@ form > button {
   font-weight: 600;
 
   cursor: pointer;
+
+  transition: all .3s ease-in-out;
+}
+
+form > button:hover {
+  background-color: var(--Grey-900-darker);
 }
