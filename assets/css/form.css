@@ -33,7 +33,7 @@ form .field-name > input,
 form .field-last_name > input {
   margin-top: 1rem;
 
-  padding: .7rem 1rem;
+  padding: 1rem;
 
   border-radius: .5rem;
   border: 1px solid var(--Grey-500-medium);
@@ -62,7 +62,7 @@ form .field-email > span {
 }
 
 form .field-email ~ input {
-  padding: .7rem 1rem;
+  padding: 1rem;
 
   border-radius: .5rem;
   border: 1px solid var(--Grey-500-medium);
@@ -100,7 +100,7 @@ form .field[for="message"] > span {
 form .field[for="message"] ~ textarea {
   margin-top: 1rem;
 
-  padding: 1.5rem 1rem;
+  padding: 1rem;
 
   border-radius: .5rem;
   border: 1px solid var(--Grey-500-medium);
