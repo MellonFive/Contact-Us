@@ -38,4 +38,15 @@
   form .field > .radio-grid {
     font-size: 1.7rem;
   }
+
+  form .checkbox-row > input ~ span {
+    font-size: 1.6rem;
+
+    color: var(--Grey-500-medium);
+  }
+
+  form > button {
+    font-size: 1.7rem;
+    font-weight: 600;
+  }
 }
