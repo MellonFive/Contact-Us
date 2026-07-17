@@ -57,7 +57,7 @@
   }
 
   main > h1 {
-    font-size: 2.2rem;
+    font-size: 2rem;
   }
 
   form .field-row {
@@ -69,14 +69,14 @@
 
   form .field-name,
   form .field-last_name {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     font-weight: 600;
 
     color: var(--Grey-500-medium);
   }
 
   form .field > #query-type-legend {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
   }
 
   form .field-email > span {
